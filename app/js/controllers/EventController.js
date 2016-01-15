@@ -11,6 +11,7 @@ eventsApp.controller('EventController',
                 address: 'Google',
                 city: 'Mountain View',
                 state: 'CA'
-            }
-        }
-    })
+            },
+            imageUrl: '/img/angularjs-logo.png'
+        };
+    });
