@@ -3,10 +3,11 @@
 eventsApp.controller('EventController',
     function EventController($scope)    {
 
-        $scope.snippit = '<span style="color:red">hi there</span>';
-        $scope.boolValue = true;
+        // $scope.snippit = '<span style="color:red">hi there</span>';
+        // $scope.boolValue = true;
         // $scope.mystyle = {color:'red'};
-        $scope.buttonDisabled = true;
+        // $scope.buttonDisabled = true;
+        $scope.sortorder = 'name';
 
         $scope.event = {
             name: 'Angular Boot Camp',
@@ -24,7 +25,7 @@ eventsApp.controller('EventController',
                 creatorName: 'Bob',
                 duration: '1 hr',
                 level: 'Advanced',
-                abstract: 'In this session you will learn....',
+                abstract: 'In this session you will learn about stuff....',
                 upVoteCount: 0
               },
               {
@@ -32,7 +33,7 @@ eventsApp.controller('EventController',
                 creatorName: 'John',
                 duration: '1 hr',
                 level: 'Advanced',
-                abstract: 'In this session you will learn....',
+                abstract: 'In this session you will learn about more stuff....',
                 upVoteCount: 0
               },
               {
@@ -40,7 +41,7 @@ eventsApp.controller('EventController',
                 creatorName: 'Mark',
                 duration: '1 hr',
                 level: 'Advanced',
-                abstract: 'In this session you will learn....',
+                abstract: 'In this session you will learn about the most stuff....',
                 upVoteCount: 0
               }
             ]
