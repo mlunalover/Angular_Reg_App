@@ -15,13 +15,25 @@ eventsApp.controller('EventController',
             imageUrl: '/img/angularjs-logo.png',
             sessions: [
               {
-                name: 'Class 1'
+                name: 'Class 1',
+                creatorName: 'Bob',
+                duration: '1 hr',
+                level: 'Advanced',
+                abstract: 'In this session you will learn....'
               },
               {
-                name: 'Class 2'
+                name: 'Class 2',
+                creatorName: 'John',
+                duration: '1 hr',
+                level: 'Advanced',
+                abstract: 'In this session you will learn....'
               },
               {
-                name: 'Class 3'
+                name: 'Class 3',
+                creatorName: 'Mark',
+                duration: '1 hr',
+                level: 'Advanced',
+                abstract: 'In this session you will learn....'
               }
             ]
         };
