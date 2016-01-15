@@ -12,6 +12,17 @@ eventsApp.controller('EventController',
                 city: 'Mountain View',
                 state: 'CA'
             },
-            imageUrl: '/img/angularjs-logo.png'
+            imageUrl: '/img/angularjs-logo.png',
+            sessions: [
+              {
+                name: 'Class 1'
+              },
+              {
+                name: 'Class 2'
+              },
+              {
+                name: 'Class 3'
+              }
+            ]
         };
     });
