@@ -24,6 +24,12 @@
 
             <div ng-bind-html="snippit">some title</div>
 
+            <button class="btn" ng-disabled="buttonDisabled">Disabled</button>
+
+            <div ng-non-bindable>
+              {{ 1 + 2 }}
+            </div>
+
             <h2 class="" ng-show="boolValue">Show This</h2>
             <h2 class="" ng-hide="boolValue">Hide This</h2>
 
