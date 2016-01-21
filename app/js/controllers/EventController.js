@@ -23,23 +23,23 @@ eventsApp.controller('EventController',
               {
                 name: 'Class 1',
                 creatorName: 'Bob',
-                duration: '1 hr',
-                level: 'Advanced',
+                duration: '1',
+                level: 'Introductory',
                 abstract: 'In this session you will learn about stuff....',
                 upVoteCount: 0
               },
               {
                 name: 'Class 2',
                 creatorName: 'John',
-                duration: '1 hr',
-                level: 'Advanced',
+                duration: '2',
+                level: 'Intermediate',
                 abstract: 'In this session you will learn about more stuff....',
                 upVoteCount: 0
               },
               {
                 name: 'Class 3',
                 creatorName: 'Mark',
-                duration: '1 hr',
+                duration: '4',
                 level: 'Advanced',
                 abstract: 'In this session you will learn about the most stuff....',
                 upVoteCount: 0

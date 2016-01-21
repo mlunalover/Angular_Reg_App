@@ -11,7 +11,7 @@
     <div class="container">
         <div class="navbar-inner">
             <ul class="nav">
-
+              <li><a href="/NewEvent.html">Create Event</a></li>
             </ul>
         </div>
         <div ng-controller="EventController">
@@ -58,8 +58,15 @@
               <option selected value="name">Name</option>
               <option value="-upVoteCount">Votes</option>
             </select>
+            Show:
+            <select class="input-medium" ng-model="query.level">
+              <option seleted value="">All</option>
+              <option value="introductory">Introductory</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
             <ul class="thumbnails">
-              <li ng-repeat="session in event.sessions | orderBy: sortorder ">
+              <li ng-repeat="session in event.sessions | orderBy: sortorder |filter: query ">
 
                 <div class="row session">
                   <div class="span0 well votingWidget">
@@ -96,6 +103,7 @@
     <script src="./lib/angular/angular-sanitize.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/controllers/EventController.js"></script>
+    <script src="./js/filters.js"></script>
 
     </body>
 
